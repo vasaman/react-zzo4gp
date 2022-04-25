@@ -1,5 +1,6 @@
 import React from 'react';
 import { AuthProvider } from '../contexts/AuthContexts';
+import SignUp from './SignUp';
 export default function App() {
   return (
     <Container
@@ -7,7 +8,9 @@ export default function App() {
       style={{ minHeight: '100vh' }}
     >
       <div className="w-100" style={{ maxWidth: '400px' }}>
-        <AuthProvider></AuthProvider>
+        <AuthProvider>
+          <SignUp />
+        </AuthProvider>
       </div>
     </Container>
   );
